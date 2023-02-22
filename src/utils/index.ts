@@ -47,21 +47,4 @@ export const utils = () => {
     while ((n = walk.nextNode())) a.push(n);
     return a;
   }
-
-  //   function matchCase(text, pattern) {
-  //     let result = '';
-
-  //     for (let i = 0; i < text.length; i++) {
-  //       const c = text.charAt(i);
-  //       const p = pattern.charCodeAt(i);
-
-  //       if (p >= 65 && p < 65 + 26) {
-  //         result += c.toUpperCase();
-  //       } else {
-  //         result += c.toLowerCase();
-  //       }
-  //     }
-
-  //     return result;
-  //   }
 };

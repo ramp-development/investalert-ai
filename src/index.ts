@@ -15,6 +15,11 @@ window.Webflow.push(() => {
       const name = input.dataset.form;
       input.dataset.name = name;
     });
+
+    if (form.dataset.name !== 'register') return;
+    form.addEventListener('submit', () => {
+      window.lintrk('track', { conversion_id: 11437778 });
+    });
   });
 
   /**
@@ -22,13 +27,7 @@ window.Webflow.push(() => {
    */
   const URLParams = new URLSearchParams(window.location.search);
   const userID = URLParams.get('id');
-
-  if (userID) {
-    verification(userID);
-  }
+  if (userID) verification(userID);
 
   utils();
-
-  // const accordionHeader = document.querySelector('.faqs_group-header');
-  // simulateEvent(accordionHeader, 'click');
 });
