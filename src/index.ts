@@ -15,11 +15,6 @@ window.Webflow.push(() => {
       const name = input.dataset.form;
       input.dataset.name = name;
     });
-
-    if (form.dataset.name !== 'register') return;
-    form.addEventListener('submit', () => {
-      window.lintrk('track', { conversion_id: 11437778 });
-    });
   });
 
   /**
